@@ -1,10 +1,18 @@
-import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-export default class Game extends Component {
+import App from '../App';
 
-	render() {
-		return (
-			<div> 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸 🍵 🐸</div> 
-		)
-	}
-}
+const mapStateToProps = state => ({
+  message: state.message,
+});
+
+const Game = connect(
+  mapStateToProps,
+)(App);
+
+export default Game;
+Collapse
+
+
+
+Message Input
