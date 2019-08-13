@@ -1,14 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Game from './components/Game';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
-const App = () => {
-  return (
-    <div className="App">
-      <Game />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>{this.props.message}</h1>
+      </div>
+    );
+  }
 }
 
+App.propTypes = {
+  message: PropTypes.string.isRequired,
+};
+
 export default App;
+Collapse
+
+
+
+Message Input
