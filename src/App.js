@@ -16,8 +16,3 @@ App.propTypes = {
 };
 
 export default App;
-Collapse
-
-
-
-Message Input

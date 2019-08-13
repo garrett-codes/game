@@ -11,8 +11,3 @@ const Game = connect(
 )(App);
 
 export default Game;
-Collapse
-
-
-
-Message Input
